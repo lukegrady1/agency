@@ -44,7 +44,7 @@ export function Header() {
                 className="flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded"
               >
                 <img
-                  src="/JG Solutions.PNG"
+                  src={`${import.meta.env.BASE_URL}JG Solutions.PNG`}
                   alt={companyName}
                   className="h-10 w-auto"
                 />
