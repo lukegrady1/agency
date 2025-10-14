@@ -3,17 +3,22 @@ import { Home } from "@/pages/Home";
 import { Privacy } from "@/pages/Privacy";
 import { Terms } from "@/pages/Terms";
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/privacy",
+      element: <Privacy />,
+    },
+    {
+      path: "/terms",
+      element: <Terms />,
+    },
+  ],
   {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/privacy",
-    element: <Privacy />,
-  },
-  {
-    path: "/terms",
-    element: <Terms />,
-  },
-]);
+    basename: import.meta.env.BASE_URL,
+  }
+);

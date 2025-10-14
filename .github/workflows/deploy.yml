@@ -37,6 +37,7 @@ jobs:
         run: npm run build
         env:
           VITE_COMPANY_NAME: JG Solutions
+          VITE_BASE_PATH: /agency/
           VITE_CONTACT_ENDPOINT: ${{ secrets.VITE_CONTACT_ENDPOINT }}
           VITE_ANALYTICS_PROVIDER: ${{ secrets.VITE_ANALYTICS_PROVIDER }}
           VITE_ANALYTICS_DOMAIN: ${{ secrets.VITE_ANALYTICS_DOMAIN }}
