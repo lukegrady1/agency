@@ -48,6 +48,7 @@ export function Home() {
         <ServiceCards />
         <CaseSnippets />
         <ProcessSteps />
+        <PricingTable />
         <FAQ />
         <CTA />
         <LeadForm />
