@@ -10,4 +10,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  // For GitHub Pages: set base to '/repo-name/' (e.g., '/agency/')
+  // For custom domain or root deployment, use '/'
+  base: process.env.VITE_BASE_PATH || '/',
 })

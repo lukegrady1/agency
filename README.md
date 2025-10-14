@@ -221,7 +221,67 @@ Edit `public/robots.txt`:
 
 ## Deployment
 
-### Vercel (Recommended)
+### GitHub Pages (Automated with GitHub Actions)
+
+This project includes automated deployment to GitHub Pages via GitHub Actions.
+
+#### Initial Setup
+
+1. **Push your code to GitHub**:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+   git push -u origin main
+   ```
+
+2. **Enable GitHub Pages**:
+   - Go to your repository settings
+   - Navigate to **Settings** → **Pages**
+   - Under **Source**, select **GitHub Actions**
+
+3. **Configure environment secrets** (optional, for production):
+   - Go to **Settings** → **Secrets and variables** → **Actions**
+   - Add the following secrets:
+     - `VITE_CONTACT_ENDPOINT` (your Formspree URL)
+     - `VITE_ANALYTICS_PROVIDER` (e.g., `plausible` or `ga4`)
+     - `VITE_ANALYTICS_DOMAIN` (your domain)
+     - `VITE_GA_ID` (if using GA4)
+     - `VITE_CALENDLY_URL` (optional)
+
+4. **Update base path** (if not using custom domain):
+   - Set the `VITE_BASE_PATH` environment variable in the workflow or update `.env`:
+     ```env
+     VITE_BASE_PATH=/your-repo-name/
+     ```
+
+#### How It Works
+
+The GitHub Actions workflow (`.github/workflows/deploy.yml`) will:
+- Automatically trigger on push to `main` branch
+- Install dependencies and build the project
+- Deploy to GitHub Pages
+
+After pushing, your site will be available at:
+- Custom domain: `https://yourdomain.com`
+- GitHub Pages: `https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/`
+
+#### Manual Deployment
+
+You can also deploy manually using the `gh-pages` package:
+
+```bash
+npm run deploy
+```
+
+**Note**: For manual deployment, update `vite.config.ts` to set the correct base path:
+```typescript
+base: '/your-repo-name/',
+```
+
+### Vercel (Alternative)
 
 1. Push your code to GitHub
 2. Import project in Vercel
@@ -230,36 +290,7 @@ Edit `public/robots.txt`:
 
 No additional configuration needed.
 
-### GitHub Pages
-
-1. Install `gh-pages`:
-   ```bash
-   npm install -D gh-pages
-   ```
-
-2. Update `vite.config.ts`:
-   ```typescript
-   export default defineConfig({
-     base: '/your-repo-name/',
-     // ...
-   })
-   ```
-
-3. Add deploy script to `package.json`:
-   ```json
-   {
-     "scripts": {
-       "deploy": "npm run build && gh-pages -d dist"
-     }
-   }
-   ```
-
-4. Deploy:
-   ```bash
-   npm run deploy
-   ```
-
-### Netlify
+### Netlify (Alternative)
 
 1. Push code to GitHub
 2. Import project in Netlify

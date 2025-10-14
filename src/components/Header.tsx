@@ -41,9 +41,13 @@ export function Header() {
             <div className="flex items-center">
               <a
                 href="/"
-                className="text-xl font-bold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded"
+                className="flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded"
               >
-                {companyName}
+                <img
+                  src="/JG Solutions.PNG"
+                  alt={companyName}
+                  className="h-10 w-auto"
+                />
               </a>
             </div>
 
