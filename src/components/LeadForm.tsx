@@ -204,7 +204,7 @@ export function LeadForm() {
                 {formState === "submitting" ? "Sending..." : "Get Free Audit"}
               </Button>
 
-              {calendlyUrl && (
+              {/* {calendlyUrl && (
                 <Button
                   type="button"
                   variant="outline"
@@ -213,7 +213,7 @@ export function LeadForm() {
                 >
                   Pick a time
                 </Button>
-              )}
+              )} */}
             </div>
 
             {/* Status Messages */}
