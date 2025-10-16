@@ -1,13 +1,10 @@
 import { Container } from "./Container";
 
 export function SocialProof() {
-  // Placeholder logos - replace with actual client logos
+  // Client logos
   const logos = [
-    "Client Logo 1",
-    "Client Logo 2",
-    "Client Logo 3",
-    "Client Logo 4",
-    "Client Logo 5",
+    { src: "/Dynasty_King.png", alt: "Dynasty King" },
+    { src: "/mcnamara_construction_logo.jpg", alt: "McNamara Construction" },
   ];
 
   const testimonials = [
@@ -36,13 +33,17 @@ export function SocialProof() {
           <p className="text-center text-sm font-medium text-muted-foreground mb-6">
             Trusted by local businesses
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-50">
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             {logos.map((logo, index) => (
               <div
                 key={index}
-                className="text-sm font-semibold text-muted-foreground grayscale"
+                className="grayscale opacity-60 hover:opacity-80 hover:grayscale-0 transition-all duration-300"
               >
-                {logo}
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="h-12 md:h-16 w-auto object-contain"
+                />
               </div>
             ))}
           </div>

@@ -8,7 +8,7 @@ export const services: Service[] = [
     title: "Website Design & Development",
     bullets: [
       "Fast, responsive sites that convert visitors to leads",
-      "CMS optional; easy to update",
+      "Custom designs tailored to your brand and goals",
     ],
   },
   {
@@ -19,21 +19,22 @@ export const services: Service[] = [
     ],
   },
   {
-    title: "Conversion Rate Optimization (CRO)",
+    title: "Reputation Management",
     bullets: [
-      "Speed tuning, UX fixes, landing pages, A/B tests",
+      "Monitor and respond to reviews, manage listings",
+      "Build positive brand sentiment, address negative feedback",
     ],
   },
   {
     title: "Analytics & Tracking",
     bullets: [
-      "GA4/Plausible setup, call tracking, goal funnels, dashboards",
+      "Setup and monitor Google Analytics, Tag Manager, Search Console",
     ],
   },
   {
-    title: "Content & Copywriting",
+    title: "AI Automation & Agents",
     bullets: [
-      "Service pages, blog posts, location pages that rank",
+      "Custom AI agents to automate routine tasks and improve efficiency",
     ],
   },
   {

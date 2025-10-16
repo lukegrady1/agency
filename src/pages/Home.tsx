@@ -6,7 +6,7 @@ import { StatGrid } from "@/components/StatGrid";
 import { ServiceCards } from "@/components/ServiceCards";
 import { CaseSnippets } from "@/components/CaseSnippets";
 import { ProcessSteps } from "@/components/ProcessSteps";
-import { PricingTable } from "@/components/PricingTable";
+// import { PricingTable } from "@/components/PricingTable"; // PRICING TEMPORARILY DISABLED
 import { FAQ } from "@/components/FAQ";
 import { CTA } from "@/components/CTA";
 import { LeadForm } from "@/components/LeadForm";
@@ -48,7 +48,7 @@ export function Home() {
         <ServiceCards />
         <CaseSnippets />
         <ProcessSteps />
-        <PricingTable />
+        {/* <PricingTable /> */} {/* PRICING TEMPORARILY DISABLED */}
         <FAQ />
         <CTA />
         <LeadForm />
