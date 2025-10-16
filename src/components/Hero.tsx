@@ -41,7 +41,7 @@ export function Hero() {
           </div>
 
           {/* Trust Badges */}
-          <div className="flex flex-wrap justify-center gap-4 text-sm">
+          {/* <div className="flex flex-wrap justify-center gap-4 text-sm">
             <Badge variant="secondary" className="gap-2 px-4 py-2">
               <Smartphone className="h-4 w-4" />
               Mobile-first
@@ -54,7 +54,7 @@ export function Hero() {
               <FileCheck className="h-4 w-4" />
               No long-term contracts
             </Badge>
-          </div>
+          </div> */}
         </div>
       </Container>
     </section>
