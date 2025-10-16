@@ -1,5 +1,3 @@
-import { Container } from "./Container";
-
 export function SocialProof() {
   // Client logos
   // const logos = [
@@ -24,6 +22,8 @@ export function SocialProof() {
   //     business: "Fitness Studio",
   //   },
   // ];
+
+  return null;
 
   // return (
   //   <section className="py-12 bg-muted/30">

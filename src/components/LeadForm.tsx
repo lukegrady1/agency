@@ -65,8 +65,6 @@ export function LeadForm() {
     }, 5000);
   };
 
-  const calendlyUrl = import.meta.env.VITE_CALENDLY_URL;
-
   return (
     <Section id="contact" className="bg-muted/30">
       <Container>

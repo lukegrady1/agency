@@ -1,7 +1,5 @@
 import { Container } from "./Container";
 import { Button } from "./ui/button";
-import { Badge } from "./ui/badge";
-import { Smartphone, Zap, FileCheck } from "lucide-react";
 import { getCompanyName } from "@/lib/seo";
 
 export function Hero() {
