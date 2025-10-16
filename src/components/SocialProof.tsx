@@ -3,8 +3,8 @@ import { Container } from "./Container";
 export function SocialProof() {
   // Client logos
   const logos = [
-    { src: "/Dynasty_King.png", alt: "Dynasty King" },
-    { src: "/mcnamara_construction_logo.jpg", alt: "McNamara Construction" },
+    { src: `${import.meta.env.BASE_URL}Dynasty_King.png`, alt: "Dynasty King" },
+    { src: `${import.meta.env.BASE_URL}mcnamara_construction_logo.jpg`, alt: "McNamara Construction" },
   ];
 
   const testimonials = [
