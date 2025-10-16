@@ -40,7 +40,7 @@ export function Header() {
             {/* Logo */}
             <div className="flex items-center">
               <a
-                href="/"
+                href={import.meta.env.BASE_URL}
                 className="flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded"
               >
                 <img
