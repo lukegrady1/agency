@@ -12,5 +12,5 @@ export default defineConfig({
   },
   // For GitHub Pages: set base to '/repo-name/' (e.g., '/agency/')
   // For custom domain or root deployment, use '/'
-  base: process.env.VITE_BASE_PATH || '/',
+  base: '/agency/',
 })
